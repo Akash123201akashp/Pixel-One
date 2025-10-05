@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>PixelOne - Compact Retro Gaming Console | Play the Past, Power the Present</title>
+    <meta name="description" content="PixelOne is a compact, powerful retro gaming console with Full HD+ display, 6-hour battery, and high-tactile joysticks. Experience nostalgia in your pocket.">
+    <meta name="keywords" content="retro gaming, handheld console, PixelOne, portable gaming, 8-bit games, gaming console">
+    <meta name="author" content="PixelOne">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PixelOne - Compact Retro Gaming Console">
+    <meta property="og:description" content="Play your favorite retro games anywhere — nostalgia in your pocket.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pixelone.com">
+    <meta property="og:image" content="https://pixelone.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PixelOne - Compact Retro Gaming Console">
+    <meta name="twitter:description" content="Play your favorite retro games anywhere — nostalgia in your pocket.">
+    <meta name="twitter:image" content="https://pixelone.com/og-image.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pixel Particles Canvas -->
+    <canvas id="pixelCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <span class="brand-text">PIXEL<span class="brand-accent">ONE</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#hero">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#showcase">Products</a>
+                    <a href="#about">About</a>
+                    <button id="navOrderBtn" class="nav-order-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="gradient-overlay"></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left Content -->
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="title-coral">COMPACT</span><br>
+                                <span class="title-dark">YET</span><br>
+                                <span class="title-teal">POWERFUL</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Play your favorite retro games anywhere — nostalgia in your pocket.
+                            </p>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="hero-buttons">
+                            <button id="heroOrderBtn" class="btn btn-primary">
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                </svg>
+                                Order Now
+                            </button>
+                            <a href="#showcase" class="btn btn-secondary">
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                                View Products
+                            </a>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-value stat-coral">6H</div>
+                                <div class="stat-label">Battery</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value stat-teal">HD+</div>
+                                <div class="stat-label">Display</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value stat-coral">10K+</div>
+                                <div class="stat-label">Games</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content - Console -->
+                    <div class="hero-console-wrapper">
+                        <div class="hero-console">
+                            <div class="console-screen">
+                                <div class="console-logo">PIXEL<span>ONE</span></div>
+                            </div>
+                            <div class="console-dpad"></div>
+                            <div class="console-buttons">
+                                <div class="btn-a"></div>
+                                <div class="btn-b"></div>
+                                <div class="btn-x"></div>
+                                <div class="btn-y"></div>
+                            </div>
+                            <div class="console-glow"></div>
+                        </div>
+                        <div class="badge-new">NEW</div>
+                        <div class="badge-latest">Latest Arrival</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">POWER<span class="text-coral">FUL</span> FEATURES</h2>
+                    <p class="section-subtitle">Engineered for the ultimate retro gaming experience with modern technology</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-coral">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Full HD+ Display</h3>
+                        <p class="feature-desc">Crystal clear 5.5" screen with vibrant colors and sharp pixels</p>
+                        <div class="feature-corner corner-tl"></div>
+                        <div class="feature-corner corner-br"></div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-teal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">HD Sound Output</h3>
+                        <p class="feature-desc">Immersive stereo speakers with deep bass and crisp highs</p>
+                        <div class="feature-corner corner-tl"></div>
+                        <div class="feature-corner corner-br"></div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-teal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="6" y1="12" x2="18" y2="12"/>
+                                <line x1="12" y1="6" x2="12" y2="18"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">High-Tactile Joysticks</h3>
+                        <p class="feature-desc">Precision controls with satisfying click feedback</p>
+                        <div class="feature-corner corner-tl"></div>
+                        <div class="feature-corner corner-br"></div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon icon-coral">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="6" width="18" height="12" rx="2" ry="2"/>
+                                <line x1="23" y1="13" x2="19" y2="13"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">6-Hour Battery Life</h3>
+                        <p class="feature-desc">All-day gaming on a single charge with fast charging</p>
+                        <div class="feature-corner corner-tl"></div>
+                        <div class="feature-corner corner-br"></div>
+                    </div>
+                </div>
+
+                <div class="features-banner">
+                    <p>+ 10,000 Pre-loaded Classic Games | USB-C Fast Charging | MicroSD Expandable Storage</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section id="showcase" class="showcase-section">
+            <div class="showcase-pattern"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-white">CHOOSE YOUR <span class="text-coral">STYLE</span></h2>
+                    <p class="section-subtitle text-white-70">Four stunning color variants to match your personality</p>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Red Edition -->
+                            <div class="carousel-slide">
+                                <div class="carousel-content">
+                                    <div class="product-console console-red">
+                                        <div class="product-screen">
+                                            <div class="product-logo">PIXEL<span style="color: #FF0055">ONE</span></div>
+                                        </div>
+                                        <div class="product-dpad"></div>
+                                        <div class="product-buttons">
+                                            <div></div><div></div><div></div><div></div>
+                                        </div>
+                                        <div class="product-glow" style="background: radial-gradient(circle, rgba(255,0,85,0.25) 0%, transparent 70%)"></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name" style="color: #FF0055">Neon Red Edition</h3>
+                                        <p class="product-tagline">Play Bold.</p>
+                                        <div class="product-features">
+                                            <p><span class="dot" style="background: #FF0055"></span>Premium matte finish</p>
+                                            <p><span class="dot" style="background: #FF0055"></span>Ergonomic grip design</p>
+                                            <p><span class="dot" style="background: #FF0055"></span>Limited edition colorway</p>
+                                        </div>
+                                        <button class="product-btn">Select This Color</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blue Edition -->
+                            <div class="carousel-slide">
+                                <div class="carousel-content">
+                                    <div class="product-console console-blue">
+                                        <div class="product-screen">
+                                            <div class="product-logo">PIXEL<span style="color: #00D4FF">ONE</span></div>
+                                        </div>
+                                        <div class="product-dpad"></div>
+                                        <div class="product-buttons">
+                                            <div></div><div></div><div></div><div></div>
+                                        </div>
+                                        <div class="product-glow" style="background: radial-gradient(circle, rgba(0,212,255,0.25) 0%, transparent 70%)"></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name" style="color: #00D4FF">Electric Blue Edition</h3>
+                                        <p class="product-tagline">Play Classic.</p>
+                                        <div class="product-features">
+                                            <p><span class="dot" style="background: #00D4FF"></span>Premium matte finish</p>
+                                            <p><span class="dot" style="background: #00D4FF"></span>Ergonomic grip design</p>
+                                            <p><span class="dot" style="background: #00D4FF"></span>Limited edition colorway</p>
+                                        </div>
+                                        <button class="product-btn">Select This Color</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Black Edition -->
+                            <div class="carousel-slide">
+                                <div class="carousel-content">
+                                    <div class="product-console console-black">
+                                        <div class="product-screen">
+                                            <div class="product-logo">PIXEL<span style="color: #1F2937">ONE</span></div>
+                                        </div>
+                                        <div class="product-dpad"></div>
+                                        <div class="product-buttons">
+                                            <div></div><div></div><div></div><div></div>
+                                        </div>
+                                        <div class="product-glow" style="background: radial-gradient(circle, rgba(31,41,55,0.25) 0%, transparent 70%)"></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name" style="color: #1F2937">Midnight Black Edition</h3>
+                                        <p class="product-tagline">Play Anywhere.</p>
+                                        <div class="product-features">
+                                            <p><span class="dot" style="background: #1F2937"></span>Premium matte finish</p>
+                                            <p><span class="dot" style="background: #1F2937"></span>Ergonomic grip design</p>
+                                            <p><span class="dot" style="background: #1F2937"></span>Limited edition colorway</p>
+                                        </div>
+                                        <button class="product-btn">Select This Color</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- White Edition -->
+                            <div class="carousel-slide">
+                                <div class="carousel-content">
+                                    <div class="product-console console-white">
+                                        <div class="product-screen">
+                                            <div class="product-logo">PIXEL<span style="color: #FF0055">ONE</span></div>
+                                        </div>
+                                        <div class="product-dpad"></div>
+                                        <div class="product-buttons">
+                                            <div></div><div></div><div></div><div></div>
+                                        </div>
+                                        <div class="product-glow" style="background: radial-gradient(circle, rgba(245,245,245,0.25) 0%, transparent 70%)"></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name" style="color: #1F2937">Pearl White Edition</h3>
+                                        <p class="product-tagline">Play Pure.</p>
+                                        <div class="product-features">
+                                            <p><span class="dot" style="background: #F5F5F5; border: 1px solid #ccc"></span>Premium matte finish</p>
+                                            <p><span class="dot" style="background: #F5F5F5; border: 1px solid #ccc"></span>Ergonomic grip design</p>
+                                            <p><span class="dot" style="background: #F5F5F5; border: 1px solid #ccc"></span>Limited edition colorway</p>
+                                        </div>
+                                        <button class="product-btn">Select This Color</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button class="carousel-btn carousel-prev" id="carouselPrev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next" id="carouselNext">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+
+                    <!-- Dots Indicator -->
+                    <div class="carousel-dots" id="carouselDots">
+                        <button class="dot active" data-index="0"></button>
+                        <button class="dot" data-index="1"></button>
+                        <button class="dot" data-index="2"></button>
+                        <button class="dot" data-index="3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Image -->
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <div class="about-placeholder">
+                                <div class="about-icon">
+                                    <div class="about-logo">PIXEL<br>ONE</div>
+                                </div>
+                                <p>Gaming on the go</p>
+                            </div>
+                            <div class="about-decoration deco-1"></div>
+                            <div class="about-decoration deco-2"></div>
+                        </div>
+                        <div class="about-badge">
+                            <div class="badge-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="badge-value">50K+</div>
+                                <div class="badge-label">Happy Gamers</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="about-content">
+                        <h2 class="section-title">THE STORY OF <span class="text-coral">PIXEL</span><span class="text-teal">ONE</span></h2>
+                        <div class="title-underline"></div>
+                        
+                        <p class="about-text">
+                            Born from the love of classic 8-bit games, PixelOne merges retro design with modern technology. 
+                            We believe that the best gaming experiences are timeless, and nostalgia should never be compromised by poor hardware.
+                        </p>
+
+                        <p class="about-text">
+                            Our mission is simple: bring the joy of retro gaming to everyone, everywhere. With PixelOne, 
+                            you're not just buying a console — you're joining a community of passionate gamers who appreciate 
+                            the golden age of gaming.
+                        </p>
+
+                        <div class="about-points">
+                            <div class="about-point">
+                                <div class="point-icon icon-coral">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="point-title">Innovation</h4>
+                                    <p class="point-desc">Cutting-edge tech meets classic design</p>
+                                </div>
+                            </div>
+
+                            <div class="about-point">
+                                <div class="point-icon icon-teal">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="point-title">Community</h4>
+                                    <p class="point-desc">Join thousands of retro gaming enthusiasts</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a href="#buy" class="btn btn-primary">Get Your PixelOne Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="testimonials-bg testimonials-bg-1"></div>
+            <div class="testimonials-bg testimonials-bg-2"></div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">WHAT GAMERS <span class="text-coral">SAY</span></h2>
+                    <p class="section-subtitle">Join thousands of satisfied customers who've rediscovered the joy of retro gaming</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote quote-coral">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Takes me back to my childhood! The build quality is amazing and the screen is so crisp. Best purchase I've made this year."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar avatar-coral">A</div>
+                            <div>
+                                <div class="author-name">Alex Chen</div>
+                                <div class="author-role">Retro Gaming Enthusiast</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-corner"></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote quote-teal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4A7C7E">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4A7C7E">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4A7C7E">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4A7C7E">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#4A7C7E">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Sleek, portable, and powerful. I can play all my favorite classics on my commute. The battery life is incredible!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar avatar-teal">S</div>
+                            <div>
+                                <div class="author-name">Sarah Martinez</div>
+                                <div class="author-role">Daily Commuter</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-corner"></div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote quote-coral">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
+                                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9B8A">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Best handheld gaming experience ever. The controls feel premium and responsive. Worth every penny!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar avatar-coral">M</div>
+                            <div>
+                                <div class="author-name">Mike Johnson</div>
+                                <div class="author-role">Gaming Collector</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-corner"></div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="testimonials-stats">
+                    <div class="stat-box">
+                        <div class="stat-value stat-coral">4.9</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value stat-teal">50K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value stat-coral">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value stat-teal">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buy Section -->
+        <section id="buy" class="buy-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">GET YOUR <span class="text-coral">PIXEL</span><span class="text-teal">ONE</span></h2>
+                    <p class="section-subtitle">Own stock available. Latest arrivals - trending model with awesome quality!</p>
+                </div>
+
+                <div class="buy-grid">
+                    <!-- Product Card -->
+                    <div class="buy-card">
+                        <div class="buy-price">
+                            <div class="price-main">
+                                <span class="price-current">₹3,756</span>
+                                <span class="price-old">₹5,999</span>
+                            </div>
+                            <div class="price-badge">BEST RESELLER PRICE - FREE SHIPPING</div>
+                        </div>
+
+                        <!-- Color Selection -->
+                        <div class="color-selection">
+                            <label class="color-label">Choose Your Color</label>
+                            <div class="color-grid">
+                                <button class="color-option active" data-color="red">
+                                    <div class="color-swatch" style="background: #FF0055"></div>
+                                    <div class="color-name">Neon</div>
+                                    <div class="color-check">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="color-option" data-color="blue">
+                                    <div class="color-swatch" style="background: #00D4FF"></div>
+                                    <div class="color-name">Electric</div>
+                                    <div class="color-check">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="color-option" data-color="black">
+                                    <div class="color-swatch" style="background: #1F2937"></div>
+                                    <div class="color-name">Midnight</div>
+                                    <div class="color-check">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <button class="color-option" data-color="white">
+                                    <div class="color-swatch" style="background: #F5F5F5; border: 1px solid #e5e7eb"></div>
+                                    <div class="color-name">Pearl</div>
+                                    <div class="color-check">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Specs -->
+                        <div class="specs-list">
+                            <h3 class="specs-title">What's Included</h3>
+                            <div class="specs-grid">
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>Full HD+ 5.5" Display</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>6-Hour Battery Life</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>HD Stereo Speakers</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>High-Tactile Controls</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>10,000+ Pre-loaded Games</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>USB-C Fast Charging</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>Awesome Quality ⭐</span>
+                                </div>
+                                <div class="spec-item">
+                                    <svg class="spec-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    <span>Trending Model 🌀</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefits -->
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <svg class="benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/>
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                                <div class="benefit-text">Free Shipping India</div>
+                            </div>
+                            <div class="benefit-item">
+                                <svg class="benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                                <div class="benefit-text">Awesome Quality</div>
+                            </div>
+                            <div class="benefit-item">
+                                <svg class="benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="3" width="15" height="13"/>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                    <circle cx="5.5" cy="18.5" r="2.5"/>
+                                    <circle cx="18.5" cy="18.5" r="2.5"/>
+                                </svg>
+                                <div class="benefit-text">2-7 Days Delivery</div>
+                            </div>
+                        </div>
+
+                        <!-- Order Button -->
+                        <button id="orderNowBtn" class="btn btn-primary btn-full">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                            </svg>
+                            Order Now - ₹3,756
+                        </button>
+
+                        <p class="buy-note">Free shipping India wide • Own stock • 2-7 days delivery</p>
+                    </div>
+
+                    <!-- Payment QR -->
+                    <div class="payment-card">
+                        <h3 class="payment-title">SCAN TO <span class="text-coral">PAY</span></h3>
+                        
+                        <div class="qr-container">
+                            <img src="/images/payment-qr.jpg" alt="Payment QR Code - 9880700926@fam" class="qr-image">
+                            <p class="qr-id">9880700926@fam</p>
+                            <p class="qr-note">Scan with any UPI app</p>
+                        </div>
+
+                        <div class="payment-steps">
+                            <div class="payment-step">
+                                <div class="step-number step-coral">1</div>
+                                <div>
+                                    <h4 class="step-title">Scan QR Code</h4>
+                                    <p class="step-desc">Use your payment app to scan the code above</p>
+                                </div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="step-number step-teal">2</div>
+                                <div>
+                                    <h4 class="step-title">Complete Payment</h4>
+                                    <p class="step-desc">Enter amount (₹3,756) and confirm transaction</p>
+                                </div>
+                            </div>
+                            <div class="payment-step">
+                                <div class="step-number step-coral">3</div>
+                                <div>
+                                    <h4 class="step-title">Get Confirmation</h4>
+                                    <p class="step-desc">Receive order confirmation via email instantly</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-methods">
+                            <p class="methods-label">Accepted Payment Methods</p>
+                            <div class="methods-list">
+                                <div class="method-badge">UPI</div>
+                                <div class="method-badge">Cards</div>
+                                <div class="method-badge">Wallets</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="trust-section">
+                    <p class="trust-text">Trusted by 50,000+ gamers across India</p>
+                    <div class="trust-badges">
+                        <div class="trust-badge">Awesome Quality ⭐</div>
+                        <div class="trust-dot"></div>
+                        <div class="trust-badge">Free Shipping India</div>
+                        <div class="trust-dot"></div>
+                        <div class="trust-badge">Own Stock</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <h3 class="footer-logo">PIXEL<span class="text-coral">ONE</span></h3>
+                        <p class="footer-tagline">Play the Past. Power the Present.</p>
+                        <p class="footer-desc">Bringing retro gaming to the modern era with premium handheld consoles.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#showcase">Products</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#buy">Buy Now</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns & Warranty</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Get in Touch</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <svg class="contact-icon icon-coral" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <a href="mailto:akashp2010610@gmail.com">akashp2010610@gmail.com</a>
+                            </li>
+                            <li>
+                                <svg class="contact-icon icon-teal" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <a href="tel:+917975653922">+91 7975653922</a>
+                            </li>
+                            <li>
+                                <svg class="contact-icon icon-coral" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>India</span>
+                            </li>
+                        </ul>
+
+                        <!-- Social Links -->
+                        <div class="footer-social">
+                            <p class="social-label">Follow Us</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com" target="_blank" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© <span id="currentYear"></span> PixelOne. All rights reserved.</p>
+                    <p class="footer-slogan">PLAY THE PAST. <span class="text-coral">POWER</span> THE <span class="text-teal">PRESENT</span>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTop" class="scroll-to-top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="19" x2="12" y2="5"/>
+                <polyline points="5 12 12 5 19 12"/>
+            </svg>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="particles.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
